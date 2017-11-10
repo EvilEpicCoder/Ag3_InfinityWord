@@ -1,11 +1,11 @@
 ### Getting Started
   * We creating opensource tool for security, it contain two parts.
-    * First part utility for generating passwords and cobvert it.
-    * Second part database of wordlists, wordlist consist of:
-      * Boys and Girls names of any country ru_boys.list or es_boys.list (cose_something.list)
-      * Family names
-      * Words, en_words.list br_words.list etc...
-      * Provide in issue other variants are welcome.
+   * First part utility for generating passwords and convert it.
+   * Second part database of wordlists, wordlist consist of:
+     * Boys and Girls names of any country ru_boys.list or es_boys.list (cose_something.list)
+     * Family names
+     * Words, en_words.list br_words.list etc...
+     * Provide in issue other variants are welcome.
   * Make sure you have [NodeJS](https://nodejs.org/) installed. (planned *)
   * Make sure you have [Yarn](https://yarnpkg.com/) installed. While you are welcome to use npm for package management, the package-lock.json file is intentionally gitignored in favor of yarn.(planned *)
   * Or make sure you have C++ installed with make for Linux or Dev-cpp or Code::Blox for Windows 
