@@ -6,7 +6,7 @@
  * Why it created, which problens solved:
   If you like write password on russian like "котик" but do
   not change keyboard layout you will had "rjnbr", so my utility deal with it.
- * Small story telling : It nice to have!
+ * Require support by write a code: [ISSUE_TEMPLATE](https://github.com/EvilEpicCoder/Ag3_InfinityWord/blob/master/ISSUE_TEMPLATE.md)
 #### 2. What I use in this project
  * Frameworks : C++ (C plus plus code) Windows/Linux
  * Links: [This is Link CHANGE_HERE name](https://www.CHANGE_HERE)
