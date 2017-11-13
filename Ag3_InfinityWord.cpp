@@ -5,7 +5,8 @@ int main(int argc, char const *argv[]);
 static void show_usage(string name);
 std::string buffer;
 std::string infile,outfile,code,addition;
-
+char RU[75]={'Й','Ц','У','К','Е','Н','Г','Ш','Щ','З','Х','Ъ','Ф','Ы','В','А','П','Р','О','Л','Д','Ж','Э' ,'/','|','Я','Ч','С','М','И','Т','Ь','Б','Ю',',' ,'й','ц','у','к','е','н','г','ш','щ','з','х','ъ','ф','ы','в','а','п','р','о','л','д','ж','э' ,'\\','/','я','ч','с','м','и','т','ь','б','ю','.'};
+char EN[75]={'Q','W','E','R','T','Y','U','I','O','P','{','}','A','S','D','F','G','H','J','K','L',':','\"','|','>','Z','X','C','V','B','N','M','<','>','\?','q','w','e','r','t','y','u','i','o','p','[',']','a','s','d','f','g','h','j','k','l',';','\'','\\','<','z','x','c','v','b','n','m',',','.','/'};
 
 static void show_usage(string name)
 {
@@ -22,6 +23,8 @@ cerr << "Usage: " << name << " <option(s)>"
 }
 
 int main(int argc, char const *argv[]){
+  setlocale(LC_ALL,"Russian");
+  //setlocale(LC_CTYPE, "rus");
   if (argc < 3) {
        show_usage(argv[0]);
        return 1;
@@ -67,15 +70,27 @@ int main(int argc, char const *argv[]){
          }
        }
      }
-     std::ifstream myfile(infile.c_str());
-     std::ofstream myoutfile(outfile.c_str());
-     if (myfile.is_open())
-     {
-       while ( getline (myfile,buffer) )
-         {
-           myoutfile << buffer << '\n';
-         }
-         myfile.close();
-       }
+    std::ifstream myfile(infile.c_str());
+    std::ofstream myoutfile(outfile.c_str());
+    //std::locale::global(std::locale("ru_RU.utf8"));
+    if (myfile.is_open())
+    {
+      // for(wchar_t c; myfile.get(c); ){
+      //   myoutfile<<c<<'\n';
+      // }
+      for(char c; myfile.get(c); ){
+        if(c=='\n'){
+          myoutfile <<'\n';
+        }
+          for(int b=0;b<75;b++){
+            if(c==RU[b]){
+              myoutfile << EN[b];
+            }
+          }
+
+        }
+      myfile.close();
+      myoutfile.close();
+    }
   return 0;
 }

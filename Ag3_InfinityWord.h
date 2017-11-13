@@ -4,4 +4,4 @@
 #include <string>
 #include <cstring>
 #include <vector>
-//#include <conio>
+#include <locale>
