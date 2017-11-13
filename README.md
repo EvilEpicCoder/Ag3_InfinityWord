@@ -13,16 +13,16 @@
 #### 3. Instructions
   * How to use:
   ```
-  Ag3 input.list output.list -code RU2EN -add dd.mm.yyyy
+  Ag3_InfinityWord -i input.list -o output.list -c RU2EN -a dd.mm.yyyy
   //will decode from Russian to English and add (your) date till current date
   ```
   next snippet
   ```
-  Ag3 input.list output.list -code NONE -add dd.mm.yyyy to dd.mm.yyyy
+  Ag3_InfinityWord --input input.list --output output.list --code NONE --add dd.mm.yyyy-dd.mm.yyyy
   //will add (your) date(min) till (your) another date(max)
   ```
   * Time consumption
   * What I learned
 
-  Version: `0.1a`
-  Date: `10.11.2017`
+  Version: `0.2a`
+  Date: `12.11.2017`
