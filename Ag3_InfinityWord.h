@@ -3,4 +3,5 @@
 #include <fstream>
 #include <string>
 #include <cstring>
+#include <vector>
 //#include <conio>
