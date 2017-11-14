@@ -6,12 +6,11 @@ static void show_usage(string name);
 std::string buffer;
 std::string infile,outfile,code,addition;
 std::string codeVal;
-char addingSymbol;
+std::string addingSymbol;
 int day;
 int month;
 int year;
-int addingNumbersMin=0;
-long addingNumbersMax=0;
+long addingNumbers=0;
 char RU[75]={'Й','Ц','У','К','Е','Н','Г','Ш','Щ','З','Х','Ъ','Ф','Ы','В','А','П','Р','О','Л','Д','Ж','Э' ,'/','|','Я','Ч','С','М','И','Т','Ь','Б','Ю',',' ,'й','ц','у','к','е','н','г','ш','щ','з','х','ъ','ф','ы','в','а','п','р','о','л','д','ж','э' ,'\\','/','я','ч','с','м','и','т','ь','б','ю','.'};
 char EN[75]={'Q','W','E','R','T','Y','U','I','O','P','{','}','A','S','D','F','G','H','J','K','L',':','\"','|','>','Z','X','C','V','B','N','M','<','>','\?','q','w','e','r','t','y','u','i','o','p','[',']','a','s','d','f','g','h','j','k','l',';','\'','\\','<','z','x','c','v','b','n','m',',','.','/'};
 
@@ -75,7 +74,7 @@ int main(int argc, char const *argv[]){
            std::cerr << " code for direction of transcofing is incorrect" << std::endl;
            return 1;
          }
-       }elseif ((arg == "-s") || (arg == "--symb")){
+       }else if ((arg == "-s") || (arg == "--symb")){
          if (i + 1 < argc) {
            addingSymbol = argv[i+1];
            cout<<addingSymbol;
@@ -101,13 +100,13 @@ int main(int argc, char const *argv[]){
             if(c==RU[b]){
               myoutfile << EN[b];
               if (addition=="notdate"){
-                if(addingSymbol){
+                if(addingSymbol!=""){
                   myoutfile <<addingSymbol<<addingNumbers;
                 }else{
                   myoutfile << addingNumbers;
                 }
               }else{
-                if(addingSymbol){
+                if(addingSymbol!=""){
                   myoutfile<<day<<addingSymbol<<month<<addingSymbol<<year;
                 }else{
                   myoutfile<<day<<month<<year;
