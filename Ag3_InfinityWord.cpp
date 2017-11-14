@@ -5,6 +5,8 @@ int main(int argc, char const *argv[]);
 static void show_usage(string name);
 std::string buffer;
 std::string infile,outfile,code,addition;
+std::string code;
+std::string add;
 char RU[75]={'Й','Ц','У','К','Е','Н','Г','Ш','Щ','З','Х','Ъ','Ф','Ы','В','А','П','Р','О','Л','Д','Ж','Э' ,'/','|','Я','Ч','С','М','И','Т','Ь','Б','Ю',',' ,'й','ц','у','к','е','н','г','ш','щ','з','х','ъ','ф','ы','в','а','п','р','о','л','д','ж','э' ,'\\','/','я','ч','с','м','и','т','ь','б','ю','.'};
 char EN[75]={'Q','W','E','R','T','Y','U','I','O','P','{','}','A','S','D','F','G','H','J','K','L',':','\"','|','>','Z','X','C','V','B','N','M','<','>','\?','q','w','e','r','t','y','u','i','o','p','[',']','a','s','d','f','g','h','j','k','l',';','\'','\\','<','z','x','c','v','b','n','m',',','.','/'};
 
@@ -13,12 +15,12 @@ static void show_usage(string name)
 cerr << "Usage: " << name << " <option(s)>"
               << "\nOptions:\n"
               << "\t-h,--help\t\tShow this help message\n"
-              << "\t-i,--input INPUT file\n"
-              << "\t-o,--output OUTPUT file\n"
-              << "\t-c,--code string RU2EN EN2RU RU2ES RU2PL\n"
-              << "\t-a adding string as _num, num, dd:mm:yy\n"
-              << "\tUsage: Ag3 input.list output.list -code RU2EN -add dd.mm.yyyy-dd.mm.yyyy \n"
-            	<< "\tUsage: Ag3 input.list output.list -code RU2EN -add _num 0-9999 \n"
+              << "\t-i,--input\t\tINPUT file\n"
+              << "\t-o,--output\t\tOUTPUT file\n"
+              << "\t-c,--code\t\tstring RU2EN EN2RU RU2ES RU2PL\n"
+              << "\t-a,--add\t\tadding string as _num, num, dd:mm:yy\n"
+              << "\tUsage: ./Ag3_InfinityWord -i input.list -o output.list -c RU2EN -a dd.mm.yyyy-dd.mm.yyyy \n"
+            	<< "\tUsage: ./Ag3_InfinityWord --input input.list --output output.list --code RU2EN --add _num 0-9999 \n"
               << std::endl;
 }
 
