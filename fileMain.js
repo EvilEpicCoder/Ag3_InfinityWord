@@ -31,13 +31,19 @@ console.log(direct);
         if(addChar){
           buffer+=addChar;
         }//messy code add char at the end of line
+        //buffer+='\n';
         if(addNum>0){
-          for(var g=0;g<addNum;g++){
-            buffer+=g;
+        var tempNumAdd=addNum;
+          for(;tempNumAdd>-1;tempNumAdd--){
+            var tempString = buffer;
+            tempString += tempNumAdd;
+            tempString+='\n';
             linesNumber=counter(linesNumber);
+            //buffer+='\n';
+            writeable.write(tempString);//collect data and write to file
+            tempString='';
           }
         }
-        buffer+='\n';
         writeable.write(buffer);//collect data and write to file
         buffer='';//clear buffer
         linesNumber=counter(linesNumber);//update counter of the lines
