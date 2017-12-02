@@ -1,1 +1,6 @@
 language: node_js
+node_js:
+- 'v6.12.0'
+bundler_args: --without production
+script:
+- "node Ag3_module_Nodejs.js"
