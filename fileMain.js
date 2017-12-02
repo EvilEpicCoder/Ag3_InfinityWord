@@ -1,6 +1,6 @@
 const counter = require('./counter')
 const fs = require('fs');
-const async = require('async');
+// const async = require('async');
 const path = require('path');
 
 
