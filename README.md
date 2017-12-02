@@ -1,11 +1,12 @@
 ## Ag3_InfinityWord
 ### Word list generator
-[![base](https://img.shields.io/badge/EEC-Forensic-red.svg?style=flat-square)](https://img.shields.io/badge/EvilEpicCoder-Information--repo-red.svg?style=flat-square)
-[![base](https://img.shields.io/badge/Status-Active-red.svg?style=flat-square)](https://img.shields.io/badge/EvilEpicCoder-Information--repo-red.svg?style=flat-square)
-[![GitHub license](https://img.shields.io/github/license/EvilEpicCoder/Ag3_InfinityWord.svg?style=flat-square)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/EvilEpicCoder/Ag3_InfinityWord.svg?style=flat-square)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/issues)
-[![GitHub forks](https://img.shields.io/github/forks/EvilEpicCoder/Ag3_InfinityWord.svg?style=flat-square)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/network)
-[![GitHub stars](https://img.shields.io/github/stars/EvilEpicCoder/Ag3_InfinityWord.svg?style=flat-square)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/stargazers)
+[![base](https://img.shields.io/badge/EEC-Forensic-red.svg)](https://img.shields.io/badge/EvilEpicCoder-Information--repo-red.svg)
+[![base](https://img.shields.io/badge/Status-Active-red.svg)](https://img.shields.io/badge/EvilEpicCoder-Information--repo-red.svg)
+[![GitHub license](https://img.shields.io/github/license/EvilEpicCoder/Ag3_InfinityWord.svg)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/EvilEpicCoder/Ag3_InfinityWord.svg)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/issues)
+[![GitHub forks](https://img.shields.io/github/forks/EvilEpicCoder/Ag3_InfinityWord.svg)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/network)
+[![GitHub stars](https://img.shields.io/github/stars/EvilEpicCoder/Ag3_InfinityWord.svg)](https://github.com/EvilEpicCoder/Ag3_InfinityWord/stargazers)
+[![Build Status](https://travis-ci.org/EvilEpicCoder/Ag3_InfinityWord.svg?branch=master)](https://travis-ci.org/EvilEpicCoder/Ag3_InfinityWord)
 
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/EvilEpicCoder/Ag3_InfinityWord.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FEvilEpicCoder%2FAg3_InfinityWord)
 #### 1.Project
