@@ -32,6 +32,7 @@ console.log(direct);
           buffer+=addChar;
         }//messy code add char at the end of line
         //buffer+='\n';
+        console.log(chunk);
         if(addNum>0){
         var tempNumAdd=addNum;
           for(;tempNumAdd>-1;tempNumAdd--){
@@ -40,10 +41,12 @@ console.log(direct);
             tempString+='\n';
             linesNumber=counter(linesNumber);
             //buffer+='\n';
+            console.log(tempString); // chunk is one symbol
             writeable.write(tempString);//collect data and write to file
             tempString='';
           }
         }
+        //console.log(buffer); // chunk is one symbol
         writeable.write(buffer);//collect data and write to file
         buffer='';//clear buffer
         linesNumber=counter(linesNumber);//update counter of the lines
@@ -51,7 +54,7 @@ console.log(direct);
         //console.log(chunk);//shows current symbol
       }
       buffer+=chunk;
-      //console.log(chunk); // chunk is one symbol
+
     }
   });
 }
